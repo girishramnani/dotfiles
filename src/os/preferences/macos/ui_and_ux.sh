@@ -12,9 +12,6 @@ execute "defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool
          defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true" \
    "Avoid creating '.DS_Store' files on network or USB volumes"
 
-execute "defaults write com.apple.menuextra.battery ShowPercent -string 'NO'" \
-    "Hide battery percentage from the menu bar"
-
 execute "sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true" \
     "Show language menu in the top right corner of the boot screen"
 
@@ -36,9 +33,6 @@ execute "defaults write com.apple.screencapture location -string '$HOME/Desktop'
 execute "defaults write com.apple.screencapture type -string 'png'" \
     "Save screenshots as PNGs"
 
-execute "defaults write com.apple.screensaver askForPassword -int 1 && \
-         defaults write com.apple.screensaver askForPasswordDelay -int 0"\
-    "Require password immediately after into sleep or screen saver mode"
 
 execute "defaults write -g AppleFontSmoothing -int 2" \
     "Enable subpixel font rendering on non-Apple LCDs"
@@ -64,10 +58,10 @@ execute "defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bo
 execute "defaults write -g PMPrintingExpandedStateForPrint -bool true" \
     "Expand print panel by default"
 
-execute "sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string 'Laptop' && \
-         sudo scutil --set ComputerName 'laptop' && \
-         sudo scutil --set HostName 'laptop' && \
-         sudo scutil --set LocalHostName 'laptop'" \
+execute "sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string 'girish' && \
+         sudo scutil --set ComputerName 'girish' && \
+         sudo scutil --set HostName 'girish' && \
+         sudo scutil --set LocalHostName 'girish'" \
     "Set computer name"
 
 execute "sudo systemsetup -setrestartfreeze on" \

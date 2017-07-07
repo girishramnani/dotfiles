@@ -2,3 +2,10 @@
 
 [ -n "$PS1" ] \
     && . ~/.bash_profile
+
+export GOPATH="/Users/crest/GoProjects"
+
+export PATH="/Users/crest/GoProjects/bin:$PATH"
+export PATH="/Users/crest/MyApps:$PATH"
+export PATH="/Users/crest/MyApps/splunk/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
